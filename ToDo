@@ -1,0 +1,35 @@
+
+================================================================================
+FATTO
+================================================================================
+
+Completato il model
+Sistemati gli include/require ( in futuro semplicemente aggiungere una nuova
+                                funzione statica in Utils/Autoloader.php ed
+                                aggiungerla alla coda con spl_autoload_register )
+Sistemata struttura Smarty
+
+
+================================================================================
+DA FARE
+================================================================================
+
+Controller
+
+Vista
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

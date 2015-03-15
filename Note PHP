@@ -1,0 +1,26 @@
+
+// COMPORTAMENTO INCLUDE e REQUIRE CON PATH RELATIVO
+================================================================================
+Il path relativo conta dalla cartella in cui chiamo LA PRIMA include/require, cioè se sto in
+pippo/pluto/paperino.php e faccio require_once "../topolino.php", PHP cerca il file
+pippo/topolino.php.
+Ma se in topolino.php ho un'altra require, ad esempio require_once "../qui.php", il
+comportamento non sarà quello che ci aspettiamo!
+Infatti PHP cercherà il file pippo/qui.php e non qui.php perchè riparte a cercare il file
+dalla directory che contiene lo script chiamato, nel nostro esempio pippo/pluto/paperino.php
+
+Quindi, forse, conviene inserire i path assoluti
+
+
+
+
+
+// COMPORTAMENTO INCLUDE e REQUIRE CON PATH RELATIVO
+================================================================================
+Se abbiamo 2 classi o 1 classe e 1 interfaccia con lo stesso nome (ad esempio Pippo.php),
+anche in cartelle diverse ed in un terzo file di istanziare quella classe
+(new Pippo()), allora PHP non saprà quale delle due istanziare
+
+
+
+

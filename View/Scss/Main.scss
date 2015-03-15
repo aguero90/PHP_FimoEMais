@@ -1,0 +1,141 @@
+
+/* VARIABILI
+===============================================================================================
+=============================================================================================== */
+
+
+
+
+/* MIXINS
+===============================================================================================
+=============================================================================================== */
+@mixin transition($value){
+    transition:             $value;
+    -moz-transition:        $value;
+    -webkit-transition:     $value;
+}
+
+@mixin transform($value){
+    transform:              $value;
+    -moz-transform:         $value;
+    -webkit-transform:      $value;
+}
+
+@mixin borderRadius($value){
+    border-radius:          $value;
+    -moz-border-radius:     $value;
+    -webkit-border-radius:  $value;
+}
+
+@mixin boxShadow($value){
+    box-shadow:             $value;
+    -moz-box-shadow:        $value;
+    -webkit-box-shadow:     $value;
+}
+
+@mixin animation($value){
+    animation:              $value;
+    -webkit-animation:      $value;
+    -moz-animation:         $value;
+}
+
+@mixin selection($background, $value){
+    ::selection{
+        background-color: $background;
+        color: $value;
+    }
+
+    ::-moz-selection {
+        background-color: $background;
+        color: $value;
+    }
+}
+
+/* ANIMAZIONI
+===============================================================================================
+=============================================================================================== */
+@keyframes animation_name{
+    0%{
+
+    }
+    100%{
+
+    }
+}
+
+@-moz-keyframes animation_name{
+    0%{
+
+    }
+    100%{
+
+    }
+}
+
+@-webkit-keyframes animation_name{
+    0%{
+
+    }
+    100%{
+
+    }
+}
+
+
+/* FONT
+===============================================================================================
+=============================================================================================== */
+@font-face{
+    font-family: 'YOUR_NAME';
+    src: url(PATH) format('truetype');
+}
+
+// ... tutti i font-face che vuoi ...
+
+@font-face{
+    font-family: 'YOUR_NAME';
+    src: url(PATH) format('truetype');
+}
+
+
+
+/* REGOLE DI STILE ( DIPENDENTI DAL PROGETTO )
+===============================================================================================
+=============================================================================================== */
+
+
+
+
+/* [ HELPER ] REGOLE DI STILE ( INDIPENDENTI DAL PROGETTO )
+===============================================================================================
+In questa sezione sono presenti tutte quelle regole di stile che possono essere utili durante
+il design di una pagina o un'applicazione web.
+La filosofia di questi [ HELPER ] è che sono completamente "autonomi", cioè basterà inserire
+nel markup la classe o l'id e si otterrà ciò che si desiderava.
+=============================================================================================== */
+
+// nasconde un elemento
+.hide{
+    display: none;
+}
+
+// per tutti qugli elementi da centrare verticalmente in mezzo al vuoto
+.verticalCenter{
+
+    &:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+}
+
+
+
+
+
+/* MEDIA QUERY
+===============================================================================================
+=============================================================================================== */
+
+
